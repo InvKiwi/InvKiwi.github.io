@@ -10,14 +10,13 @@
 
   <body>
 
-
     <!--Header----------------------------------------------------->
 
     <header>
       <div id="menu">
         <ul>
           <li class="topmenu">
-              <a href="#home"><img src="img/logo.png" alt="Logo.png"></a>
+              <a href="#home"><img src="img/Logo.jpg" alt="Logo.png"></a>
               <ul>
                   <li class="submenu"><a href="https://instagram.com/theastrayofficial" target="_blank">Instagram</a></li>
                   <li class="submenu"><a href="https://www.youtube.com/channel/UC-ACxX8AidsZJ-PPj2jZMeA" target="_blank">YouTube</a></li>
@@ -45,13 +44,13 @@
           <h1>A MOONLIGHT NIGHT</h1>
           <a href="#about">
             <h4 class="pfeil">▼</h4>
-            <hr class="shadow">
           </a>
       </section>
 
       <!--About----------------------------------------------------->
 
       <section id="about">
+        <hr class="shadow">
         <h3>About the Album</h3>
         <hr>
         <img src="img/avatar.png" alt="Avatar.png">
@@ -201,8 +200,6 @@
           </a>
           </li>
 
-
-
           <li id="song_03">
             <h3>In this Moonlight night</h3>
             <hr>
@@ -248,7 +245,7 @@
               I crave touch, crave your love, crave your heart <br>
               <br>
               Oh I am sick of it, sick of it <br>
-              Sick of swallowing, swallowing <br>
+              Sick of swallowing, swallowing <br>y
               All that I'm feeling deep down to my bones <br>
               My heart beats quicker than it's ever been <br>
               The stars are flickering flickering <br>
@@ -615,7 +612,7 @@
               Our music stopped in the dance hall <br>
               We’re dancing at the Dreamers Ball/So take me to the Dreamers Ball <br>
               God, I need you by my side <br>
-              I need  my saving light <br>
+              I need  my saving light <br> 
               Then again/only then this/the stars are shining bright <br>
               <br>
               But I know I have to let you go <br>
@@ -643,45 +640,46 @@
     <h3>Contact</h3>
     <hr>
     <p>
-      Bei Interesse per E-Mail an theastrayofficial@gmx.de wenden, oder über Instagram an theastrayofficial.
+      Interested? Enter your EMail-Adress and get notified when the Album is available for purchase!
     </p>
 
-    <FORM method="POST">
-      <input type="text" id="Email"> <br>
-      <input type="text" id="Name"> <br>
-      <input class="button" type="submit" value="Save" onclick="save_func()">
+      <input type="text" name="name" id="name" placeholder="Name"> <br>
+      <input type="email" name="emailadresse" id="email" placeholder="E-Mail"> <br>
+      <a href="Danke.html">
+       <input type="button" class="button" onclick="save_func()" value="Save">
+      </a>
 
+    <script>
+      function save_func(){
 
-      <script>
-        function save_func(){
-          const email = document.getElementById("Email").value;
-          const name = document.getElementById("Name").value;
-
-          fs.writeFile('interessenten.txt', email, err =>{
-            if(err){
-              console.error;
-              return;
-            }
-          });
-
-          fs.writeFile('interessenten.txt', name, err =>{
-            if(err){
-              console.error;
-              return;
-            }
-          });
-        }
-      </script>
-    </FORM>
+        var name = document.getElementById("name").value;
+        var emailadresse = document.getElementById("email").value;
+        var fileName = name + ".txt";
+        
+        var data = new String; 
+        data = name + ": " + emailadresse;
+        
+        var file = new Blob([data]);
+        var anchor = document.createElement("a");
+        alert("anchor erstellt");
+      
+                        /*anchor.href = URL.createObjectURL(file);
+                        anchor.download = fileName;
+                        anchor.click();*/
+        //alert("downloade die scheisse is dann aber aufm client pc und nicht auf der website To Do: auf website hochladen anstatt bei client runter laden");
+      }
+    </script>
   </section>
 
     <!--Footer----------------------------------------------------->
 
-      <footer>
+      <footer> 
         <p>
-          life is fuck!
-        </p>
-    </footer>
+          <a href="lifeisfuck.html">
+           <h5> life is fuck!</h5>
+          </a>
+       </p>
+      </footer>
     </div>
   </body>
 </html>

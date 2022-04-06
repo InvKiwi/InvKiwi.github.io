@@ -169,13 +169,14 @@ header nav ul li:hover {
 /**************************HOME*****************************/
 
 #home {
-  padding-top: 0%;
+  width: 100%;
+  padding-top: 3%;
   z-index: 1;
   background: url(img/homeBg3.jpg);
   background-position-x: center;
-  background-position-y: -20%;
+  background-position-y: center;
   background-size: cover;
-  background-attachment:fixed;
+  background-attachment:scroll;
 }
 
 #home h1 {
@@ -198,7 +199,8 @@ header nav ul li:hover {
   align-items: baseline;
 }
 
-#home hr {
+.shadow {
+  margin-top: -1%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 
@@ -206,7 +208,11 @@ header nav ul li:hover {
 
 
 #about{
-  padding-top: 10px;
+  padding-top: 1%;
+}
+
+#about h2{
+  padding-top: 0%;
 }
 
 #about img {
@@ -332,12 +338,20 @@ form input {
   height: 30px;
 }
 
-form textarea {
-  width: 550px;
-  height: 200px;
-  resize: none;
+#contact input:first-child {
+  margin-top: 10px;
 }
 
+#contact input {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 2px solid;
+  border-color: #494949;
+  width: 552px;
+  height: 30px;
+}
 
 .input_text {
   color: #494949;
@@ -347,7 +361,7 @@ form textarea {
 .button {
   background-color: #f0f0f0;
   color: #494949;
-  width: 566px;
+  width: 560px;
   height: 40px;
 }
 
@@ -356,16 +370,35 @@ form textarea {
   color: #f0f0f0;
 }
 
-/*******CONTACT***************************************/
+/*******FOOTER***************************************/
 
 footer {
   width: 100%;
   height: 40px;
   background-color: #3f3f3f;
   color: white;
-  padding-top: 0px;
+  padding-top: 0%;
 }
 
 footer p {
-  padding-top: 7px;
+  text-align: center;
+  padding-top: 0%;
+}
+
+/****************Danke***********************************/
+
+#Danke {
+  width: 100%; 
+}
+
+
+#Danke h2 {
+  font-size: 40px;
+  color: #8F999F;
+  text-shadow: 3px 3px 0 #000;
+  margin: 170px auto 0 auto;
+}
+
+#Danke h3{
+  padding-top:0%;
 }
