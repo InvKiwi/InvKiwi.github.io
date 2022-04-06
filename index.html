@@ -643,32 +643,14 @@
       Interested? Enter your EMail-Adress and get notified when the Album is available for purchase!
     </p>
 
+    <form action="save.php">
       <input type="text" name="name" id="name" placeholder="Name"> <br>
-      <input type="email" name="emailadresse" id="email" placeholder="E-Mail"> <br>
+      <input type="email" name="emailadresse" id="email" placeholder="E-Mail" required> <br>
       <a href="Danke.html">
-       <input type="button" class="button" onclick="save_func()" value="Save">
+       <input type="submit" class="button" onclick="save_func()" value="Save">
       </a>
-
-    <script>
-      function save_func(){
-
-        var name = document.getElementById("name").value;
-        var emailadresse = document.getElementById("email").value;
-        var fileName = name + ".txt";
-        
-        var data = new String; 
-        data = name + ": " + emailadresse;
-        
-        var file = new Blob([data]);
-        var anchor = document.createElement("a");
-        alert("anchor erstellt");
-      
-                        /*anchor.href = URL.createObjectURL(file);
-                        anchor.download = fileName;
-                        anchor.click();*/
-        //alert("downloade die scheisse is dann aber aufm client pc und nicht auf der website To Do: auf website hochladen anstatt bei client runter laden");
-      }
-    </script>
+    </form>
+   
   </section>
 
     <!--Footer----------------------------------------------------->
