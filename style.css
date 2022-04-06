@@ -180,7 +180,7 @@ header nav ul li:hover {
 }
 
 #home h1 {
-  margin: 45px auto 0 auto;
+  margin: 7% auto 0 auto;
   color: #8F999F;
   font-weight: 140;
   font-size: 100px;
@@ -192,7 +192,7 @@ header nav ul li:hover {
   font-size: 40px;
   color: #8F999F;
   text-shadow: 3px 3px 0 #000;
-  margin: 14% auto 0 auto;
+  margin: 10% auto 0 auto;
 }
 
 #home a {
