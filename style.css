@@ -284,10 +284,6 @@ header nav ul li:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#incredible img:hover {
-  src: "songs/incredible/incredible.mp3";
-}
-
 /***********************FILLER*********************************/
 
 #filler{
