@@ -93,6 +93,10 @@ header {
   z-index: 1;
 }
 
+#menu img{
+  width: 200px;
+}
+
 #menu {
   width: 140px;
   float: left;
@@ -122,25 +126,29 @@ header {
 }
 
 .topmenu a, .submenu a{
-    padding:15px;
-    color:white;
+    width: 200px;
     font-weight:bold;
     text-decoration:none;
     background-color:#000;
     margin:0;
+    height: 30px;
+}
+
+.submenu {
+  margin-top: 60px;
 }
 
 .submenu a{
-    box-shadow:10px 10px 10px rgb(28, 28, 28);
-    font-size:12px;
-    width:120px;
-    position:relative;
-    clear:both;
+  padding: 15px;
+  box-shadow:10px 10px 10px rgb(28, 28, 28);
+  font-size:12px;
+  width:120px;
+  position:relative;
+  clear:both;
 }
 
 #menu a:hover, .topmenu.on a {
     color:white;
-    background-color:#5c5c5c;
 }
 
 .topmenu:hover ul {
@@ -218,7 +226,7 @@ header nav ul li:hover {
 /**************************ABOUT*****************************/
 
 #about{
-  background: url(Img/sectionhintergrund3.jpg);
+  background: url(Img/sectionhintergrund3.png);
   margin-top: -40px;
   margin-left: 13.25%;
   width: 75%;
@@ -258,7 +266,7 @@ header nav ul li:hover {
 /**************************SONGS*****************************/
 
 #projects {
-  background: url(Img/sectionhintergrund3.jpg);
+  background: url(Img/sectionhintergrund3.png);
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
@@ -298,7 +306,7 @@ header nav ul li:hover {
 /***********************FILLER*********************************/
 
 #filler{
-  background: url(Img/sectionhintergrund3.jpg);
+  background: url(Img/sectionhintergrund3.png);
   margin-left: 13.25%;
   width: 75%;
   background-color: rgb(28, 28, 28);
@@ -310,7 +318,7 @@ header nav ul li:hover {
 /*************************Lyrics*******************************/
 
 #Songs {
-  background: url(Img/sectionhintergrund3.jpg);
+  background: url(Img/sectionhintergrund3.png);
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
@@ -319,7 +327,7 @@ header nav ul li:hover {
 }
 
 #Songs ul li {
-  background: url(Img/sectionhintergrund3.jpg);
+  background: url(Img/sectionhintergrund3.png);
   padding-top: 10%;
   min-height: 100%;
   background-color: rgb(28, 28, 28);
