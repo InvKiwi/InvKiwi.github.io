@@ -1,0 +1,418 @@
+@media (orientation: portrait) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
+    section {
+        min-height: 100%;
+        scroll-snap-align: start;
+        align-items: center;
+    }
+
+    html {
+        width: 100%;
+        padding-top: 3%;
+        z-index: 1;
+        background: url(Img/hintergrund5.png);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        background-attachment:fixed;
+        scroll-snap-type: y mandatory;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    h1, h2, h3, a {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        color: #C8C8C8;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        padding-top: 8%;
+        font-stretch: expanded;
+    }
+
+    h3 {
+        font-size: 40px;
+        padding-top: 8%;
+        margin-bottom: 5px;
+        text-shadow: 4px 3px 0 #000;
+    }
+
+    h4, p {
+        font-family: 'Playfair Display', serif;
+        color: #C8C8C8;
+    }
+
+    hr {
+        width: 80px;
+        height: 3px;
+        background: #C8C8C8;
+        border: 0;
+        margin: 0 auto 40px auto;
+    }
+
+    .pfeil{
+        font-size: 20px;
+    }
+
+    li, #logo, img, .button, #menu {transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; -webkit-transition: all 300ms}
+
+
+    /*******HEADER***************************************/
+
+    header {
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        top: 0;
+        left:0;
+        background: #000;
+        box-shadow: 0 7px 3px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    #menu {
+        width: 140px;
+        float: left;
+        margin: 20px 0 0 10px;
+        position:absolute;
+    }
+
+    #menu ul {
+        list-style-type:none;
+        list-style-image:none;
+        margin:0;
+        padding:0;
+    }
+
+    #menu li.topmenu {
+        float:left;
+    }
+
+    .topmenu a {
+        float:left;
+        width:120px;
+        text-align:center;
+    }
+
+    .topmenu ul{
+        display:none;
+    }
+
+    .topmenu a, .submenu a{
+        padding:15px;
+        color:white;
+        font-weight:bold;
+        text-decoration:none;
+        background-color:#000;
+        margin:0;
+    }
+
+    .submenu a{
+        box-shadow:10px 10px 10px rgb(28, 28, 28);
+        font-size:12px;
+        width:120px;
+        position:relative;
+        clear:both;
+    }
+
+    #menu a:hover, .topmenu.on a {
+        color:white;
+        background-color:#5c5c5c;
+    }
+
+    .topmenu:hover ul {
+        display:block;
+        z-index:500;
+    }
+
+    #logo img {
+        width: 100%;
+    }
+
+    #logo:hover {
+        opacity: 0.5;
+    }
+
+    header nav {
+        float: right;
+        margin: 17px 0 0 10px;
+    }
+
+    header nav ul li {
+        float: left;
+        margin-right: 25px;
+        margin-top: 5%;
+    }
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+
+    header nav ul li:hover {
+        padding-top: 3px;
+    }
+
+    /**************************HOME*****************************/
+
+    #home {
+        width: 100%;
+        height: 30%;
+        padding-top: 1%;
+        z-index: 1;
+        overflow-x: hidden;
+        background: url(Img/homeBg3.jpg);
+        background-attachment:fixed;
+        background-position-x: center;
+        background-position-y: top;
+    }
+
+    #home h1 {
+        letter-spacing: 0.187em;
+        margin: 7.5% auto 0 auto;
+        color: #8F999F;
+        font-weight: 140;
+        font-size: 100px;
+        font-stretch: wider;
+        text-shadow: 7px 7px 0 #000;
+    }
+
+    #home h2 {
+        font-size: 40px;
+        color: #8F999F;
+        text-shadow: 3px 3px 0 #000;
+        margin: 10% auto 0 auto;
+    }
+
+    #home a {
+        align-items: baseline;
+    }
+
+    #shadow {
+        width: 100%;
+        margin-top: 340px;
+        box-shadow: 0 7px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /**************************ABOUT*****************************/
+
+    #about{
+        background: url(Img/sectionhintergrund3.jpg);
+        margin-top: 0px;
+        margin-left: 13.25%;
+        width: 75%;
+        background-color: rgb(28, 28, 28);
+        padding-top: 10%;
+    }
+
+    #about h3 {
+        position: relative;
+        margin-top: 60%;
+    }
+
+    #about img {
+        width: 240px;
+    }
+
+    #about h4 {
+        font-size: 30px;
+        text-shadow: 3px 3px 0 #000;
+    }
+
+    #about p {
+        font-size: 20px;
+        width: 500px;
+        margin: 0 auto 0 auto;
+    }
+
+    .shadow {
+        width: 100%;
+        height: 1px;
+        box-shadow: 0 0 60px rgb(1, 1, 1);
+    }
+
+    #about img:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /**************************SONGS*****************************/
+
+    #projects {
+        background: url(Img/sectionhintergrund3.jpg);
+        margin-top: -2.2%;
+        margin-left: 13.25%;
+        width: 75%;
+        background-color: rgb(28, 28, 28);
+        padding-top: 75%;
+    }
+
+    #songs {
+        width: 600px;
+    }
+
+    #songs ul {
+        padding: 0;
+    }
+
+    #songs ul li {
+        width: 33.3%;
+        float: left;
+        margin-bottom: 15px;
+    }
+
+    #songs img {
+        width: 180px;
+        height: 120px;
+        border-radius: 0px;
+    }
+
+    #songs img:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /*************************Lyrics*******************************/
+
+    #Songs {
+        padding-top: 40%;
+        background: url(Img/sectionhintergrund3.jpg);
+        margin-top: -2.2%;
+        margin-left: 13.25%;
+        width: 75%;
+        background-color: rgb(28, 28, 28);
+        min-height: 100%;
+    }
+
+    #Songs ul li {
+        background: url(Img/sectionhintergrund3.jpg);
+        padding-top: 60%;
+        padding-right: 4%;
+        min-height: 100%;
+        background-color: rgb(28, 28, 28);
+    }
+
+    #Songs ul li p {
+        font-size: 20px;
+        width: 500px;
+        margin: 0 auto 0 auto;
+    }
+
+    /*******CONTACT***************************************/
+
+    #contact {
+        background-color: rgb(30, 30, 30);
+        padding-top: 40%;
+    }
+
+    form input, textarea {
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 2px solid;
+        border-color: #494949;
+    }
+
+    form input:first-child {
+        margin-top: 10px;
+    }
+
+    form input {
+        width: 552px;
+        height: 30px;
+    }
+
+    #contact input:first-child {
+        margin-top: 10px;
+    }
+
+    #contact input {
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        border: 2px solid;
+        border-color: #494949;
+        width: 552px;
+        height: 30px;
+    }
+
+    .input_text {
+        color: #494949;
+        padding-left: 10px;
+    }
+
+    .button {
+        background-color: #f0f0f0;
+        color: #494949;
+        width: 560px;
+        height: 40px;
+    }
+
+    .button:hover {
+        background-color: #494949;
+        color: #f0f0f0;
+    }
+
+    /*******FOOTER***************************************/
+
+    footer {
+        margin-top: -2.2%;
+        width: 100%;
+        height: 50px;
+        background-color: #3f3f3f;
+        color: white;
+        padding-top: 0%
+    }
+
+    footer p {
+        padding-top: 0%;
+    }
+
+    /****************Danke***********************************/
+
+    #Danke {
+        width: 100%; 
+    }
+
+    #Danke h2 {
+        font-size: 40px;
+        color: #8F999F;
+        text-shadow: 3px 3px 0 #000;
+        margin: 170px auto 0 auto;
+    }
+
+    #Danke h3{
+    padding-top:0%;
+    }
+}
