@@ -7,19 +7,18 @@ html, body {
   overflow: hidden;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 
-  .container {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-
-    section {
-      min-height: 100%;
-      scroll-snap-align: start;
-    }
+section {
+  min-height: 100%;
+  scroll-snap-align: start;
+}
 
 html {
   width: 100%;
@@ -78,7 +77,6 @@ hr {
 }
 
 li, #logo, img, .button, #menu {transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms; -webkit-transition: all 300ms}
-
 
 /*******HEADER***************************************/
 
