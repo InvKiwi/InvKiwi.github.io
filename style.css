@@ -7,12 +7,19 @@ html, body {
   overflow: hidden;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
+
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+    section {
+      min-height: 100%;
+      scroll-snap-align: start;
+    }
 
 html {
   width: 100%;
@@ -23,12 +30,9 @@ html {
   background-position-y: center;
   background-size: cover;
   background-attachment:fixed;
+  scroll-snap-type: y mandatory;
 }
-
-section {
-  min-height: 110%;
-}
-
+  
 a {
   text-decoration: none;
 }
@@ -117,7 +121,6 @@ header {
     display:none;
 }
 
-
 .topmenu a, .submenu a{
     padding:15px;
     color:white;
@@ -153,7 +156,6 @@ header {
   opacity: 0.5;
 }
 
-
 header nav {
   float: right;
   margin: 17px 0 0 10px;
@@ -179,14 +181,15 @@ header nav ul li:hover {
   padding-top: 1%;
   z-index: 1;
   background: url(Img/homeBg3.jpg);
+  background-attachment:fixed;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
-  background-attachment:fixed;
 }
 
 #home h1 {
-  margin: 7% auto 0 auto;
+  letter-spacing: 0.187em;
+  margin: 7.5% auto 0 auto;
   color: #8F999F;
   font-weight: 140;
   font-size: 100px;
@@ -214,7 +217,8 @@ header nav ul li:hover {
 /**************************ABOUT*****************************/
 
 #about{
-  margin-top: -1px;
+  background: url(Img/sectionhintergrund3.jpg);
+  margin-top: -40px;
   margin-left: 13.25%;
   width: 75%;
   background-color: rgb(28, 28, 28);
@@ -253,6 +257,7 @@ header nav ul li:hover {
 /**************************SONGS*****************************/
 
 #projects {
+  background: url(Img/sectionhintergrund3.jpg);
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
@@ -292,6 +297,7 @@ header nav ul li:hover {
 /***********************FILLER*********************************/
 
 #filler{
+  background: url(Img/sectionhintergrund3.jpg);
   margin-left: 13.25%;
   width: 75%;
   background-color: rgb(28, 28, 28);
@@ -303,6 +309,7 @@ header nav ul li:hover {
 /*************************Lyrics*******************************/
 
 #Songs {
+  background: url(Img/sectionhintergrund3.jpg);
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
@@ -311,6 +318,7 @@ header nav ul li:hover {
 }
 
 #Songs ul li {
+  background: url(Img/sectionhintergrund3.jpg);
   padding-top: 10%;
   min-height: 100%;
   background-color: rgb(28, 28, 28);
