@@ -198,6 +198,7 @@ header nav ul li:hover {
 }
 
 #home h2 {
+  letter-spacing: 0.18em;
   font-size: 40px;
   color: #8F999F;
   text-shadow: 3px 3px 0 #000;
