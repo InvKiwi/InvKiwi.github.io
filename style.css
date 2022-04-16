@@ -72,6 +72,11 @@ hr {
   margin: 0 auto 40px auto;
 }
 
+p {
+  color: #C8C8C8;
+  letter-spacing: 0.05em;
+}
+
 .pfeil{
   font-size: 20px;
 }
@@ -225,6 +230,14 @@ header nav ul li:hover {
   width: 100%;
   margin-top: 340px;
   box-shadow: 0 7px 3px rgba(0, 0, 0, 0.2);
+} 
+
+#strich {
+  margin-top: -2%;
+  background-color: #8F999F;
+  width: 245px;
+  height: 2px;
+  box-shadow:10px 10px 10px rgb(0, 0, 0);
 }
 
 /**************************ABOUT*****************************/
