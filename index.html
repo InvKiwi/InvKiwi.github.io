@@ -42,8 +42,18 @@
     </header>
 
     <!--Home----------------------------------------------------->
+
+    <script> 
+        alert("func landscape aufgerufen!") 
+        screen.orientation.lock('landscape');
+        window.requestFullscreen();
+        alert("testausgabe1");
+        screen.orientation.lock("landscape");
+        alert("screen locked!");
+    </script>  
+
     <div class="container">
-      <section id="home">
+      <section id="home" onload="landscape()">
         <hr>
           <h2>THE ASTRAY</h2>
           <hr id="strich">
