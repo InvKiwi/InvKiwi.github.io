@@ -1,4 +1,4 @@
-@media (orientation: portrait) {
+@media (max-height: 500px){
 
     html, body {
         margin: 0;
@@ -13,12 +13,10 @@
         height: 100%;
         overflow-y: scroll;
         scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
     }
 
     section {
         min-height: 100%;
-        scroll-snap-align: start;
         align-items: center;
         background: url(Img/sectionhintergrund3.jpg);
     }
@@ -32,7 +30,6 @@
         background-position-y: center;
         background-size: cover;
         background-attachment:fixed;
-        scroll-snap-type: y mandatory;
     }
 
     a {
@@ -86,7 +83,7 @@
 
     header {
         width: 100%;
-        height: 150px;
+        height: 100px;
         position: fixed;
         top: 0;
         left:0;
@@ -98,14 +95,14 @@
     #menu {
         width: 140px;
         float: left;
-        margin: 20px 0 0 10px;
+        margin: 10px 0 0 10px;
         position:absolute;
     }
 
     #menu ul {
         list-style-type:none;
         list-style-image:none;
-        margin:0;
+        margin-top: -0%;
         padding:0;
     }
 
@@ -160,7 +157,7 @@
 
     header nav {
         float: right;
-        margin: 17px 0 0 10px;
+        margin: -14px 0 0 10px;
     }
 
     header nav ul li {
@@ -222,15 +219,15 @@
 
     #about{
         background: url(Img/sectionhintergrund3.png);
-        margin-top: 0px;
+        margin-top: 0%;
         margin-left: 13.25%;
         width: 75%;
-        padding-top: 10%;
+        padding-top:0;
     }
 
     #about h3 {
         position: relative;
-        margin-top: 60%;
+        margin-top: 10%;
     }
 
     #about img {
@@ -243,7 +240,7 @@
     }
 
     #about p {
-        font-size: 20px;
+        font-size: 15px;
         width: 500px;
         margin: 0 auto 0 auto;
     }
@@ -266,10 +263,10 @@
 
     #projects {
         background: url(Img/sectionhintergrund3.png);
-        margin-top: -2.2%;
+        margin-top: -0%;
         margin-left: 13.25%;
         width: 75%;
-        padding-top: 75%;
+        padding-top: 0;
     }
 
     #songs {
@@ -287,8 +284,9 @@
     }
 
     #songs img {
+        display: flex;
         width: 180px;
-        height: 120px;
+        height: 110px;
         border-radius: 0px;
     }
 
@@ -300,35 +298,51 @@
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     }
 
+    /***********************FILLER*********************************/
+
+    #filler{
+        background: url(Img/sectionhintergrund3.png);
+        margin-left: 13.25%;
+        width: 75%;
+        background-color: rgb(28, 28, 28);
+        margin-top: -3%;
+        height: 50%;
+    }
+
     /*************************Lyrics*******************************/
 
     #Songs {
-        padding-top: 40%;
+        padding-top: 0;
         background: url(Img/sectionhintergrund3.png);
-        margin-top: -2.2%;
+        margin-top: -5.2%;
         margin-left: 13.25%;
         width: 75%;
         min-height: 100%;
     }
 
     #Songs ul li {
+        margin-top: 0%;
         background: url(Img/sectionhintergrund3.png);
-        padding-top: 60%;
+        padding-top: 0%;
         padding-right: 4%;
         min-height: 100%;
     }
 
     #Songs ul li p {
-        font-size: 20px;
+        font-size: 10px;
         width: 500px;
         margin: 0 auto 0 auto;
+    }
+
+    #Songs ul li h3 {
+        padding-top: 20%;
     }
 
     /*******CONTACT***************************************/
 
     #contact {
         background-color: rgb(30, 30, 30);
-        padding-top: 40%;
+        padding-top: 2%;
     }
 
     form input, textarea {
