@@ -13,6 +13,7 @@
         height: 100%;
         overflow-y: scroll;
         scroll-behavior: smooth;
+        scroll-snap-type: none;
     }
 
     section {
@@ -69,7 +70,7 @@
         height: 3px;
         background: #C8C8C8;
         border: 0;
-        margin: 0 auto 40px auto;
+        margin: 0 0 0 45%;
     }
 
     .pfeil{
@@ -83,7 +84,7 @@
 
     header {
         width: 100%;
-        height: 100px;
+        height: 50px;
         position: fixed;
         top: 0;
         left:0;
@@ -95,15 +96,13 @@
     #menu {
         width: 140px;
         float: left;
-        margin: 10px 0 0 10px;
+        margin: -10px 0 0 10px;
         position:absolute;
     }
 
     #menu ul {
         list-style-type:none;
-        list-style-image:none;
-        margin-top: -0%;
-        padding:0;
+        list-style-image:none
     }
 
     #menu li.topmenu {
@@ -126,7 +125,6 @@
         font-weight:bold;
         text-decoration:none;
         background-color:#000;
-        margin:0;
     }
 
     .submenu a{
@@ -163,11 +161,11 @@
     header nav ul li {
         float: left;
         margin-right: 25px;
-        margin-top: 5%;
+        margin-top: 4%;
     }
 
     header nav ul li a {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     header nav ul li:hover {
@@ -178,31 +176,29 @@
 
     #home {
         width: 100%;
-        height: 30%;
+        height: 99%;
         padding-top: 1%;
-        z-index: 1;
         overflow-x: hidden;
         background: url(Img/homeBg3.jpg);
+        background-size: cover;
         background-attachment:fixed;
-        background-position-x: center;
-        background-position-y: top;
     }
 
     #home h1 {
         letter-spacing: 0.187em;
-        margin: 7.5% auto 0 auto;
         color: #8F999F;
         font-weight: 140;
-        font-size: 100px;
+        font-size: 40px;
         font-stretch: wider;
         text-shadow: 7px 7px 0 #000;
+        margin-top: 7%;
     }
 
     #home h2 {
-        font-size: 40px;
+        font-size: 20px;
         color: #8F999F;
         text-shadow: 3px 3px 0 #000;
-        margin: 40% auto 0 auto;
+        margin: 15% auto 0 auto;
     }
 
     #home a {
@@ -211,15 +207,24 @@
 
     #shadow {
         width: 100%;
-        margin-top: 1600px;
-        box-shadow: 0 7px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 7px 1px rgba(0, 0, 0, 0.2);
+        margin-top: 0px;
+        margin-left: 0;
     }
+
+    #strich {
+        background-color: #8F999F;
+        width: 7%;
+        height: 2px;
+        box-shadow:10px 10px 10px rgb(0, 0, 0);
+        margin-top: 0%;
+      }
 
     /**************************ABOUT*****************************/
 
     #about{
         background: url(Img/sectionhintergrund3.png);
-        margin-top: 0%;
+        margin-top: -0%;
         margin-left: 13.25%;
         width: 75%;
         padding-top:0;
@@ -324,14 +329,14 @@
         margin-top: 0%;
         background: url(Img/sectionhintergrund3.png);
         padding-top: 0%;
-        padding-right: 4%;
+        padding-right: 0%;
         min-height: 100%;
     }
 
     #Songs ul li p {
         font-size: 10px;
         width: 500px;
-        margin: 0 auto 0 auto;
+        margin: 5% auto 0 auto;
     }
 
     #Songs ul li h3 {
