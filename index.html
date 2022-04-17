@@ -44,16 +44,13 @@
     <!--Home----------------------------------------------------->
 
     <script> 
-        alert("func landscape aufgerufen!") 
-        screen.orientation.lock('landscape');
-        window.requestFullscreen();
-        alert("testausgabe1");
-        screen.orientation.lock("landscape");
-        alert("screen locked!");
+      if (window.orientation.equals("portrait")){
+        alert("This site is designed for Pc use only! Please switch your device to a 16:9 monitor!");
+      }
     </script>  
 
     <div class="container">
-      <section id="home" onload="landscape()">
+      <section id="home">
         <hr>
           <h2>THE ASTRAY</h2>
           <hr id="strich">
