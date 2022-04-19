@@ -348,8 +348,7 @@ header nav ul li:hover {
 
 #Songs ul li {
   scroll-snap-align: start;
-  background: url(Img/sectionhintergrund3.png);
-  padding-top: 10%;
+  padding-top:8%;
 }
 
 #Songs ul li p {
