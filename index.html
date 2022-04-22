@@ -72,8 +72,8 @@
         <img src="Img/avatar.png" alt="Cover.png">
         <h4>A MOONLIGHTNIGHT</h4>
         <p>
-          The Album shows different Aspects of a moonlit Night. The Album resembles a walk through the night, hand in hand with the Person you love, waiting for the break of dawn. Held awake by a mix of sleeping issues, lovesick dreaming, and a little bit of wishful thinking.
-          <br>
+          The album resembles drifting away into sleep and every song is a different dream. Its about sleeping at the edge of dreams and nightmares between melancolic romanticism, reflecting the past and the tales of the dark.
+          With songs that capture the emotional depths of falling in love, trying to stand up after getting thrown to the ground and learning from lessons of the past.          <br>
           <br>
         </p>
         <a href="#projects">
@@ -105,52 +105,39 @@
 
       <!------------------------------playTeaser-->
 
-      <script type="text/javascript">
+      <script type="text/javascript"> 
+          
+          var action = false;
+          var songs = [];
 
-        function playmln() {
-        var audio = new Audio('songs/moonlightnight/teaser.mp3');
-        audio.play();
-        }
+          function playwto() {
+            songs.push("songs/welcometothejungle/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
 
-        function playwto() {
-        var audio = new Audio('songs/welcometothejungle/teaser.mp3');
-        audio.play();
-        }
+          function playi() {
+            songs.push("songs/incredible/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
 
-        function playmll() {
-        var audio = new Audio('songs/molotovlove/teaser.mp3');
-        audio.play();
-        }
+          function playQueue() {
+            if(songs.length > 0){
+              audio = new Audio(songs[0]);
+              audio.play();
+              songs.shift();
+              audio.addEventListener("ended", playQueue); 
+            }
+            else {
+              action = false;
+            }
+          }
 
-        function playey() {
-        var audio = new Audio('songs/emeraldeyes/teaser.mp3');
-        audio.play();
-        }
-
-        function playi() {
-        var audio = new Audio('songs/incredible/teaser.mp3');
-        audio.play();
-        }
-
-        function playnp() {
-        var audio = new Audio('songs/neonpink/teaser.mp3');
-        audio.play();
-        }
-
-        function playsi() {
-        var audio = new Audio('songs/sleepingissues/teaser.mp3');
-        audio.play();
-        }
-
-        function playmot() {
-        var audio = new Audio('songs/madeoftears/teaser.mp3');
-        audio.play();
-        }
-
-        function playclt() {
-        var audio = new Audio('songs/crookedlittletrees/teaser.mp3');
-        audio.play();
-        }
      </script>
 
     <!--Filler----------------------------------------------------------->
