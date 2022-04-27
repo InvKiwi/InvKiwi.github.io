@@ -73,7 +73,7 @@
         <h4>A MOONLIGHTNIGHT</h4>
         <p>
           The album resembles drifting away into sleep and every song is a different dream. Its about sleeping at the edge of dreams and nightmares between melancolic romanticism, reflecting the past and the tales of the dark.
-          With songs that capture the emotional depths of falling in love, trying to stand up after getting thrown to the ground and learning from lessons of the past.          <br>
+          With songs that capture the emotional depths of falling in love, trying to stand up after getting thrown to the ground and learning from lessons of the past. <br>
           <br>
         </p>
         <a href="#projects">
@@ -120,6 +120,38 @@
 
           function playi() {
             songs.push("songs/incredible/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playey() {
+            songs.push("songs/emeraldeyes/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playmln() {
+            songs.push("songs/moonlightnight/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playclt() {
+            songs.push("songs/crookedlittletrees/teaser.mp3");
+            if(!action){
+              action = true;
+              playQueue();
+            }
+          }
+
+          function playmot() {
+            songs.push("songs/madeoftears/teaser.mp3");
             if(!action){
               action = true;
               playQueue();
