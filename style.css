@@ -338,6 +338,7 @@ header nav ul li:hover {
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
+  display: flex;
 }
 
 #Songs li {
