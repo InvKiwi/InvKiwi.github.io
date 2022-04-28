@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="body">
 
     <!--Header----------------------------------------------------->
 
@@ -49,6 +49,7 @@
       }
       if(isMobile()){
         alert("Please use a device with a 16:9 display or turn your device!");
+        var element = document.getElementById("body");
         if(element.requestFullscreen) {
           element.requestFullscreen();
         } else if(element.msRequestFullscreen) {      
