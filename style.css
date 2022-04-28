@@ -345,6 +345,7 @@ header nav ul li:hover {
 }
 
 #Songs ul li {
+  flex:auto;
   scroll-snap-align: start;
   padding-top:8%;
 }
@@ -352,6 +353,7 @@ header nav ul li:hover {
 #Songs ul li h5 {
   font-size: 15px;
   margin-top: -0.3%;
+  font-style: italic;
 }
 
 #Songs ul li p {
@@ -368,6 +370,16 @@ header nav ul li:hover {
 
 #song_08 hr {
   margin-top: -1%;
+}
+
+#textMot {
+  font-style: normal;
+  font-family: 'Playfair Display', serif;
+  color: #C8C8C8;
+  text-transform: none;
+  width: 800px;
+  font-weight: normal;
+  flex: auto;
 }
 
 #song_09 hr {
