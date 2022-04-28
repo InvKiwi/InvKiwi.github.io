@@ -49,6 +49,13 @@
       }
       if(isMobile()){
         alert("Please use a device with a 16:9 display or turn your device!");
+        if(element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if(element.msRequestFullscreen) {      
+          element.msRequestFullscreen();
+        } else if(element.webkitRequestFullscreen) { 
+          element.webkitRequestFullscreen();
+        }
       }
     </script>  
 
