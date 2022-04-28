@@ -40,7 +40,7 @@ li {
   list-style-type: none;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, h5 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   color: #C8C8C8;
@@ -65,7 +65,7 @@ h4, p {
 }
 
 hr {
-  width: 80px;
+  width: 100px;
   height: 3px;
   background: #C8C8C8;
   border: 0;
@@ -244,7 +244,7 @@ header nav ul li:hover {
 
 #about{
   scroll-snap-align: start;
-  background: url(Img/sectionhintergrund3.png);
+  background: url(Img/sectionhintergrund6.png);
   margin-top: -40px;
   margin-left: 13.25%;
   width: 75%;
@@ -285,8 +285,7 @@ header nav ul li:hover {
 
 #projects {
   scroll-snap-align: start;
-  background: url(Img/sectionhintergrund3.png);
-  margin-top: -2.2%;
+  background: url(Img/sectionhintergrund6.png);
   margin-left: 13.25%;
   width: 75%;
   background-color: rgb(28, 28, 28);
@@ -325,7 +324,7 @@ header nav ul li:hover {
 /***********************FILLER*********************************/
 
 #filler{
-  background: url(Img/sectionhintergrund3.png);
+  background: url(Img/sectionhintergrund6.png);
   margin-left: 13.25%;
   width: 75%;
   margin-top: -3%;
@@ -335,7 +334,7 @@ header nav ul li:hover {
 /*************************Lyrics*******************************/
 
 #Songs {
-  background: url(Img/sectionhintergrund3.png);
+  background: url(Img/sectionhintergrund6.png);
   margin-top: -2.2%;
   margin-left: 13.25%;
   width: 75%;
@@ -350,15 +349,29 @@ header nav ul li:hover {
   padding-top:8%;
 }
 
+#Songs ul li h5 {
+  font-size: 15px;
+  margin-top: -0.3%;
+}
+
 #Songs ul li p {
   font-size: 20px;
   width: 800px;
-  margin: 0 auto 0 auto;
+  margin: -5px auto 0 auto;
+  flex: auto;
 }
 
 #Songs ul li img {
-  margin-top: 5px;
+  margin-top: -20px;
   width: 240px;
+}
+
+#song_08 hr {
+  margin-top: -1%;
+}
+
+#song_09 hr {
+  width: 160px;
 }
 
 /*******CONTACT***************************************/

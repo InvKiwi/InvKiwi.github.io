@@ -1,11 +1,12 @@
 @media (max-height: 500px){
 
     html, body {
+        flex:content;
         margin: 0;
         padding: 0;
         height: 100%;
         text-align: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .container {
@@ -18,15 +19,14 @@
 
     section {
         min-height: 100%;
-        align-items: center;
-        background: url(Img/sectionhintergrund3.jpg);
+        width: 100%;
     }
 
     html {
+        background: url(Img/sectionhintergrund4.jpg);
         width: 100%;
         padding-top: 3%;
         z-index: 1;
-        background: url(Img/hintergrund5.png);
         background-position-x: center;
         background-position-y: center;
         background-size: cover;
@@ -63,6 +63,10 @@
     h4, p {
         font-family: 'Playfair Display', serif;
         color: #C8C8C8;
+    }
+
+    p {
+        font-size: 2%;
     }
 
     hr {
@@ -175,12 +179,11 @@
     /**************************HOME*****************************/
 
     #home {
-        width: 100%;
-        height: 99%;
+        height: 100%;
         padding-top: 1%;
         overflow-x: hidden;
         background: url(Img/homeBg3.jpg);
-        background-size: cover;
+
         background-attachment:fixed;
     }
 
@@ -223,10 +226,6 @@
     /**************************ABOUT*****************************/
 
     #about{
-        background: url(Img/sectionhintergrund3.png);
-        margin-top: -0%;
-        margin-left: 13.25%;
-        width: 75%;
         padding-top:0;
     }
 
@@ -236,7 +235,8 @@
     }
 
     #about img {
-        width: 240px;
+        margin-top: 30px;
+        width: 150px;
     }
 
     #about h4 {
@@ -266,32 +266,19 @@
 
     /**************************SONGS*****************************/
 
-    #projects {
-        background: url(Img/sectionhintergrund3.png);
-        margin-top: -0%;
-        margin-left: 13.25%;
-        width: 75%;
-        padding-top: 0;
-    }
-
-    #songs {
-        width: 600px;
-    }
-
     #songs ul {
+        margin: 0;
         padding: 0;
     }
 
     #songs ul li {
-        width: 33.3%;
-        float: left;
         margin-bottom: 15px;
     }
 
     #songs img {
-        display: flex;
-        width: 180px;
-        height: 110px;
+        padding: 0%;
+        width: 50%;
+        height: 50%;
         border-radius: 0px;
     }
 
@@ -306,9 +293,6 @@
     /***********************FILLER*********************************/
 
     #filler{
-        background: url(Img/sectionhintergrund3.png);
-        margin-left: 13.25%;
-        width: 75%;
         background-color: rgb(28, 28, 28);
         margin-top: -3%;
         height: 50%;
@@ -318,23 +302,11 @@
 
     #Songs {
         padding-top: 0;
-        background: url(Img/sectionhintergrund3.png);
         margin-top: -5.2%;
-        margin-left: 13.25%;
-        width: 75%;
-        min-height: 100%;
-    }
-
-    #Songs ul li {
-        margin-top: 0%;
-        background: url(Img/sectionhintergrund3.png);
-        padding-top: 0%;
-        padding-right: 0%;
         min-height: 100%;
     }
 
     #Songs ul li p {
-        font-size: 10px;
         width: 500px;
         margin: 5% auto 0 auto;
     }
