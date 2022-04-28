@@ -379,7 +379,8 @@ header nav ul li:hover {
   text-transform: none;
   width: 800px;
   font-weight: normal;
-  flex: auto;
+  margin-left: 21.2%;
+  padding-top: 1%;
 }
 
 #song_09 hr {
